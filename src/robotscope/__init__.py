@@ -1,1 +1,1 @@
-"""robotscope baseline (single-responsibility pipeline)."""
+"""robotscope package (single-responsibility pipeline)."""
