@@ -1,0 +1,31 @@
+{
+  "crawl_id": "example-shop",
+  "user_agent": "robotscope/1.0",
+  "sitemap": ["https://shop.example/sitemap.xml"],
+  "urls": ["https://shop.example/"],
+  "rules": {
+    "default": "deny",
+    "allow": ["/", "/products/*", "/docs/*"],
+    "disallow": ["/products/private/*"],
+    "deny_hosts": ["ads.example"],
+    "max_depth": 4
+  },
+  "limits": 50,
+  "min_interval": 1.0,
+  "global_slots": 4,
+  "host_slots": 1,
+  "lease_ttl": 120,
+  "priority": {
+    "https://shop.example/": 2.0,
+    "shop.example": 0.5
+  },
+  "history": {
+    "shop.example": 12
+  },
+  "costs": {
+    "https://shop.example/": 0.5
+  },
+  "deadlines": {
+    "https://shop.example/docs/launch": "2026-12-01T00:00:00Z"
+  }
+}
